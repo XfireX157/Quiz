@@ -53,5 +53,3 @@ const questionsObject = [
         correta: "Claro"
     },
 ]
-
-export default questionsObject

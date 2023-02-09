@@ -1,5 +1,3 @@
-import questionsObject from './mock.js'
-
 const article = document.querySelector('.questoes')
 const answers = document.querySelectorAll('.respostas')
 const numberQuestion = document.getElementById('numQuestao')
