@@ -75,7 +75,7 @@ function checkAnswer(nQuest, answers) {
         points += 10
         point.textContent = points
     }else {
-        console.log('baubau')
+        console.log('Errou')
     }
 
     setTimeout(() => {
