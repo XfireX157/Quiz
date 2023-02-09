@@ -1,6 +1,6 @@
 const questionsObject = [
     {
-        numQuest: 1,
+        numQuest: 0,
         question: "Boreal é o mesmo que...",
         altenativeA: "Sul",
         altenativeB: "Leste",
@@ -9,7 +9,7 @@ const questionsObject = [
     },
 
     {
-        numQuest: 2,
+        numQuest: 1,
         question: "Austral é o mesmo que...",
         altenativeA: "Oeste",
         altenativeB: "Sul",
@@ -18,7 +18,7 @@ const questionsObject = [
     },
 
     {
-        numQuest: 3,
+        numQuest: 2,
         question: "Nascente é o mesmo que...",
         altenativeA: "Sul",
         altenativeB: "Leste",
@@ -27,7 +27,7 @@ const questionsObject = [
     },
 
     {
-        numQuest: 4,
+        numQuest: 3,
         question: "Qual é o real nome do Manoel Gomes...",
         altenativeA: "Manoel Jardim Gomes",
         altenativeB: "Manoel Da Silva Gomes",
@@ -36,12 +36,21 @@ const questionsObject = [
     },
 
     {
+        numQuest: 4,
+        question: "É um real...",
+        altenativeA: "A palma da banana",
+        altenativeB: "O tang",
+        altenativeC: "A maçã",
+        correta: "A palma da banana"
+    },
+
+    {
         numQuest: 5,
-        question: "Esse cheiro de cu virgem é seu?",
-        altenativeA: "Não",
-        altenativeB: "Sim",
-        altenativeC: "Lá ele?",
-        correta: "Não"
+        question: "Senac vai te destruir?",
+        altenativeA: "Sim",
+        altenativeB: "Claro",
+        altenativeC: "F",
+        correta: "Claro"
     },
 ]
 

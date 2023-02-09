@@ -9,15 +9,21 @@ const B = document.getElementById('b')
 const C = document.getElementById('c')
 const numero = document.getElementById('numero')
 const totalQuestions = document.getElementById('total')
+const point = document.getElementById('point')
 
-numero.textContent = questionsObject[0].numQuest
+let points = 0
+console.log(points)
+
+numero.textContent = questionsObject[1].numQuest
 const total = totalQuestions.textContent = (questionsObject.length) -1
 
-numberQuestion.textContent = questionsObject[0].numQuest
-Question.textContent = questionsObject[0].question
-A.textContent = questionsObject[0].altenativeA
-B.textContent = questionsObject[0].altenativeB
-C.textContent = questionsObject[0].altenativeC
+numberQuestion.textContent = questionsObject[1].numQuest
+
+Question.textContent = questionsObject[1].question
+A.textContent = questionsObject[1].altenativeA
+B.textContent = questionsObject[1].altenativeB
+C.textContent = questionsObject[1].altenativeC
+
 
 function nextQuestion(nQuest) {
     numero.textContent = nQuest
@@ -31,12 +37,29 @@ function nextQuestion(nQuest) {
     C.setAttribute('value', nQuest + 'C')
 }
 
+
 function gameOver() {
     article.innerHTML = `
-        <div> 
-            <p>Você é brabo</p>
+        <div class="centro"> 
+            <span>Você conseguiu <strong>${points}</strong> pontos</span>
+            <p>Fim de jogo!</p>
+            <button type="button" id="restart">Recomeçar</button>
         </div>
     `
+
+    point.style.display = "none"
+
+    document.getElementById('restart').addEventListener('click', () => {
+        article.innerHTML = `
+            <div class="centro"> 
+                <span>Loading...</span>
+            </div>  
+        `
+
+        setTimeout(() => {
+            window.location.reload()
+        }, 700)
+    })
 }
 
 function checkAnswer(nQuest, answers) {
@@ -46,8 +69,11 @@ function checkAnswer(nQuest, answers) {
     // console.log(littleAnswer)
     const correct = questionsObject[numQuest].correta
 
+    
     if(littleAnswer == correct) {
         console.log('Boa!')
+        points += 10
+        point.textContent = points
     }else {
         console.log('baubau')
     }
