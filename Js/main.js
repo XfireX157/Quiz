@@ -10,18 +10,14 @@ const totalQuestions = document.getElementById('total')
 const point = document.getElementById('point')
 
 let points = 0
-console.log(points)
 
-numero.textContent = questionsObject[1].numQuest
 const total = totalQuestions.textContent = (questionsObject.length) -1
-
+numero.textContent = questionsObject[1].numQuest
 numberQuestion.textContent = questionsObject[1].numQuest
-
 Question.textContent = questionsObject[1].question
 A.textContent = questionsObject[1].altenativeA
 B.textContent = questionsObject[1].altenativeB
 C.textContent = questionsObject[1].altenativeC
-
 
 function nextQuestion(nQuest) {
     numero.textContent = nQuest
@@ -35,7 +31,6 @@ function nextQuestion(nQuest) {
     C.setAttribute('value', nQuest + 'C')
 }
 
-
 function gameOver() {
     article.innerHTML = `
         <div class="centro"> 
@@ -44,9 +39,7 @@ function gameOver() {
             <button type="button" id="restart">Recomeçar</button>
         </div>
     `
-
     point.style.display = "none"
-
     document.getElementById('restart').addEventListener('click', () => {
         article.innerHTML = `
             <div class="centro"> 
@@ -66,8 +59,8 @@ function checkAnswer(nQuest, answers) {
     const littleAnswer = answers
     // console.log(littleAnswer)
     const correct = questionsObject[numQuest].correta
+    //funçaõ de pular
 
-    
     if(littleAnswer == correct) {
         console.log('Boa!')
         points += 10

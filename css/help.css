@@ -31,6 +31,29 @@
     cursor: pointer;
 }
 
+.block{
+    position: relative;
+    pointer-events: none;
+}
+
+.block::after{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: red;
+    transform: rotate(45deg);
+}
+
+.block::before{
+    position: absolute;
+    content: '';
+    width: 3px;
+    height: 100%;
+    background-color: red;
+    transform: rotate(-45deg);
+}
+
 .card:hover{
     background-color: red;
 }
