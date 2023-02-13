@@ -5,6 +5,7 @@ const questionsObject = [
         altenativeA: "Sul",
         altenativeB: "Leste",
         altenativeC: "Norte",
+        altenativaD: "Oeste",
         correta: "Norte"
     },
 
@@ -14,6 +15,7 @@ const questionsObject = [
         altenativeA: "Oeste",
         altenativeB: "Sul",
         altenativeC: "Norte",
+        altenativaD: "Leste",
         correta: "Sul"
     },
 
@@ -23,6 +25,7 @@ const questionsObject = [
         altenativeA: "Sul",
         altenativeB: "Leste",
         altenativeC: "Oeste",
+        altenativaD: "Norte",
         correta: "Leste"
     },
 
@@ -32,6 +35,7 @@ const questionsObject = [
         altenativeA: "Manoel Jardim Gomes",
         altenativeB: "Manoel Da Silva Gomes",
         altenativeC: "Manoel Caneta Azul Gomes",
+        altenativaD: "Manoel Pereira Gomes",
         correta: "Manoel Jardim Gomes"
     },
 
@@ -41,6 +45,7 @@ const questionsObject = [
         altenativeA: "A palma da banana",
         altenativeB: "O tang",
         altenativeC: "A maçã",
+        altenativaD: "A banana",
         correta: "A palma da banana"
     },
 
@@ -50,6 +55,7 @@ const questionsObject = [
         altenativeA: "Sim",
         altenativeB: "Claro",
         altenativeC: "F",
+        altenativaD: "Opa",
         correta: "Claro"
     },
 ]
