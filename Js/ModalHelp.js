@@ -4,6 +4,7 @@ document.querySelector('.help').addEventListener('click', () => {
 })
 
 const cards = document.querySelectorAll('[data-card]')
+
 for (let index = 0; index < cards.length; index++) {
     const element = cards[index];
     element.addEventListener('click', () => {
@@ -11,12 +12,11 @@ for (let index = 0; index < cards.length; index++) {
             noneQuestion()
             element.classList.add('block')
         }else if(element.dataset.card === "Plateia") {
-            console.log('Plateia')
+            audience()
             element.classList.add('block')
         }else {
             points += 10
             point.textContent = points
-            
             if(nQuest >= 5) {   
                 gameOver() 
             }else {
