@@ -45,6 +45,16 @@ const div = document.createElement('div')
 function audience() {
     const correctQuestion = questionsObject[nQuest].correta
 
+    for (let i = 0; i < answers.length; i++) {
+        const element = answers[i];
+        if(element.textContent !== correctQuestion){
+            element.style.color = "red"
+        }else {
+            element.style.color = "green"
+        }
+        
+    }
+
     div.innerHTML = `
         <div class="audience">
         <h2>Veja o que o público achou!</h2>
