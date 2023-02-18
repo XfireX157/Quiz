@@ -26,7 +26,7 @@ function renderQuestion() {
     A.textContent = questionsObject[nQuest].altenativeA
     B.textContent = questionsObject[nQuest].altenativeB
     C.textContent = questionsObject[nQuest].altenativeC
-    D.textContent = questionsObject[nQuest].altenativaD
+    D.textContent = questionsObject[nQuest].altenativeD
     A.setAttribute('value', nQuest + 'A')
     B.setAttribute('value', nQuest + 'B')
     C.setAttribute('value', nQuest + 'C')
@@ -37,6 +37,7 @@ function nextQuestion() {
     renderQuestion()
     resetAnswers()
     resetCorrectQuestion()
+    audienceReset()
 }
 
 answers.forEach(item => {
