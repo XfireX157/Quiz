@@ -39,3 +39,11 @@ function resetCorrectQuestion() {
         item.style.color = "#FFF"
     })
 }
+
+function audience() {
+    const correctAnswers = questionsObject[nQuest].correta
+
+    answers.forEach((item, index) => {
+        
+    })
+}
